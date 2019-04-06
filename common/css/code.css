@@ -1,0 +1,87 @@
+.chooseBox{
+	padding: 15px 0;
+}
+.chooseBox .choose{
+	height: 300px;
+	width: 100%;
+	border: 1px solid #ccc;
+	position: relative;
+	background: rgba(0,149,255,.2);
+}
+.chooseBox .choose .btn{
+	width: 170px;
+	height: 40px;
+	background: #0095ff;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	cursor: pointer;
+	transition: .3s;
+}
+.chooseBox .choose .btn:hover{
+	background: #07c;
+}
+
+.chooseBox .choose .btnLineBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	width: 80%;
+	/*height: 40px;*/
+}
+.chooseBox .choose .btnLineBox input{
+	display: block;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.chooseBox .choose .btnLineBox  .searchBtn{
+	width: 170px;
+	height: 40px;
+	background: #0095ff;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition: .3s;
+}
+.chooseBox .choose .btnLineBox  .searchBtn:hover{
+	background: #07c;
+}
+
+.showBox .codeImgBox{
+	width: 100%;
+	text-align: center;
+}
+.showBox .codeImgBox img{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	width: 200px;
+}
+.showBox .btn{
+	width:180px;
+	height: 45px;
+	line-height: 45px;
+	margin: 15px auto;
+	background: dodgerblue;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+}
+.showBox #output{
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}

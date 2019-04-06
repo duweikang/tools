@@ -1,0 +1,170 @@
+.toolTitleBox{
+	background: #FFD100;
+}
+.toolTitleBox .toolTitle{
+	font-size: 16px;
+	height:60px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 600;
+}
+.chooseBox{
+	padding: 15px 0;
+}
+.chooseBox .choose{
+	height: 300px;
+	width: 100%;
+	border: 1px solid #ccc;
+	position: relative;
+	background: rgba(0,149,255,.2);
+}
+.chooseBox .choose .btn{
+	width: 170px;
+	height: 40px;
+	background: #0095ff;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	cursor: pointer;
+	transition: .3s;
+}
+.chooseBox .choose .btn:hover{
+	background: #07c;
+}
+
+.chooseBox .choose .btnLineBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	width: 80%;
+	/*height: 40px;*/
+	background: red;
+}
+.chooseBox .choose .btnLineBox input{
+	display: block;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.chooseBox .choose .btnLineBox  .searchBtn{
+	width: 170px;
+	height: 40px;
+	background: #0095ff;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition: .3s;
+}
+.chooseBox .choose .btnLineBox  .searchBtn:hover{
+	background: #07c;
+}
+
+
+.showBox{
+	
+}
+.showBox .show{
+	
+}
+
+.showBox .show .imgItemBox{
+	width: 100%;
+	height: 220px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+.showBox .show .imgItemBox .left{
+	float: left;
+	width: 20%;
+	height: 220px;
+}
+.showBox .show .imgItemBox .right{
+	float: left;
+	width: 80%;
+	height: 220px;
+}
+.showBox .show .imgItemBox .left .showImg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.showBox .show .imgItemBox .left .showImg img{
+	display: block;
+	width: 90%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+.showBox .show .imgItemBox .right .top{
+	height: 60px;
+}
+.showBox .show .imgItemBox .right .top .imgName{
+	height: 30px;
+	line-height: 30px;
+	font-weight: 600;
+}
+.showBox .show .imgItemBox .right .top .imgSize{
+	height: 30px;
+	line-height: 30px;
+}
+.showBox .show .imgItemBox .right .middle{
+	height: 120px;
+	background: #f4f4f4;
+}
+.showBox .show .imgItemBox .right .middle .base64Img{
+	height: 120px;
+	overflow: auto;
+	word-wrap: break-word;
+    word-break: break-all;
+    overflow-y: auto;
+    font-size: 10px;
+    color: #999;
+}
+.showBox .show .imgItemBox .right .bottom{
+	height: 40px;
+	overflow: hidden;
+}
+.showBox .show .imgItemBox .right .bottom .copybtn{
+	height: 30px;
+	margin-top: 5px;
+	width: 120px;
+	text-align: center;
+	line-height: 30px;
+	background: #545454;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+}
+
+
+.showBox .show .imgItemBox.netImgBox{
+	height: 160px !important;
+}
+.netImgBox .right .middle{
+	/*margin-top:30px ;*/
+}
+.showBox .show .imgItemBox.netImgBox .left {
+    float: left;
+    width: 20%;
+    height: 160px !important;
+}
+.showBox .show .imgItemBox.netImgBox .right {
+    float: left;
+    width: 80%;
+    height: 160px !important;
+}

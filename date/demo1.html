@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>A date range picker for Bootstrap</title>
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="all" href="daterangepicker-bs3.css" />
+      <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="moment.js"></script>
+      <script type="text/javascript" src="daterangepicker.js"></script>
+   </head>
+   <body>
+
+      <div class="container">
+            <div class="well">
+               <form class="form-horizontal">
+                 <fieldset>
+                  <div class="control-group">
+                    <div class="controls">
+                     <div class="input-prepend input-group" id="reservationtime">
+                       <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                       <!--<input type="text" style="width: 400px;" name="reservation" id="reservationtime" class="form-control" value="08/01/2018 1:00 PM - 08/01/2018 1:30 PM"  class="span4"/>-->
+                   		<input type="text" class="startTime" id="startTime "/>
+	  					<input type="text" class="endTime" id="endTime"/>
+                     </div>
+                    </div>
+                  </div>
+                 </fieldset>
+               </form>
+            </div>            
+      </div>
+      <!--<div class="timeBox" id="reservationtime">
+      	<input type="text" class="startTime reservationtime" id="startTime"/>
+	  <input type="text" class="endTime reservationtime" id="endTime"/>
+      </div>-->
+   </body>
+  	<script src="myDate.js"></script>
+  	<script>
+  		$(function() {
+  			let start = moment().subtract('days', 0).format('YYYY-MM-DD')+" 00:00:00";
+  			let end = moment().format('YYYY-MM-DD HH:mm:ss');
+  			var str = start +" - " +end;
+  			$(".startTime").val(start);
+			$(".endTime").val(end);
+			$("#reservationtime").val(str);
+			$('#reservationtime').daterangepicker({
+				timePicker: true,
+				timePickerIncrement: 1,
+				timePicker12Hour:false,
+				format: 'YYYY-MM-DD HH:mm:ss'
+				,singleDatePicker:false
+				,timePicker12Hour:false
+			}, function(start, end) {
+				console.log(start.toISOString(), end.toISOString());
+			});
+		})
+  	</script>
+</html>

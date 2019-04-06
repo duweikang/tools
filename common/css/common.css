@@ -1,0 +1,28 @@
+.wrap{
+	width: 100%;
+}
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.headBox{
+	height: 60px;
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+}
+.bgred{
+	background: red;
+}
+.bgyellow{
+	background: #ffd100;
+}
+.bggreen{
+	background: green;
+}
+.bgpink{
+	background: pink;
+}

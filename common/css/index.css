@@ -1,0 +1,41 @@
+.headBox{
+	height: 60px;
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+}
+
+.toolBox{
+	margin-top: 15px;
+}
+.toolBox .tool{
+	width: 100%;
+	font-size: 0;
+}
+.toolItem{
+	font-size: 14px;
+	width: 25%;
+	height: 150px;
+	overflow: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.toolItem a{
+	color: #fff;
+	display: block;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-weight: 600;
+	transition: .3s;
+}
+.toolItem a:hover{
+	transform: scale(1.2);
+	color: #000;
+}
+
+
+/*media*/
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	
+}
